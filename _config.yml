@@ -20,7 +20,7 @@ description: >-
   AutoPkg Automations, Terraform Tactics, and Identity Insights
 twitter_username: MScottBlake
 github_username: MScottBlake
-minimal_mistakes_skin: dark # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+minimal_mistakes_skin: default # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 search: true
 
 # Build settings
@@ -66,27 +66,33 @@ author:
   avatar : /assets/images/bio-photo.png
   bio    : My awesome biography constrained to a sentence or two goes here.
   links:
+    - label: GitHub
+      icon: fab fa-fw fa-brands fa-github
+      url: https://github.com/MScottBlake
     - label: LinkedIn
       icon: fab fa-fw fa-brands fa-linkedin
       url: https://www.linkedin.com/in/mscottblake/
     - label: Mastodon
       icon: fab fa-fw fa-brands fa-mastodon
       url: https://fosstodon.org/@MScottBlake
-    - label: GitHub
-      icon: fab fa-fw fa-brands fa-github
-      url: https://github.com/MScottBlake
+    - label: X (Twitter)
+      icon: fab fa-fw fa-brands fa-x-twitter
+      url: https://x.com/MScottBlake
 
 footer:
   links:
+    - label: GitHub
+      icon: fab fa-fw fa-brands fa-github
+      url: https://github.com/MScottBlake
     - label: LinkedIn
-      icon: "fab fa-fw fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/mscottblake/"
-    - label: "Mastodon"
-      icon: "fab fa-fw fa-brands fa-mastodon"
-      url: "https://fosstodon.org/@MScottBlake"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-brands fa-github"
-      url: "https://github.com/MScottBlake"
+      icon: fab fa-fw fa-brands fa-linkedin
+      url: https://www.linkedin.com/in/mscottblake/
+    - label: Mastodon
+      icon: fab fa-fw fa-brands fa-mastodon
+      url: https://fosstodon.org/@MScottBlake
+    - label: X (Twitter)
+      icon: fab fa-fw fa-brands fa-x-twitter
+      url: https://x.com/MScottBlake
 
 defaults:
   # _posts
