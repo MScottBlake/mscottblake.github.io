@@ -81,6 +81,7 @@ author:
       url: https://x.com/MScottBlake
 
 footer:
+  since: 2025
   links:
     - label: GitHub
       icon: fab fa-fw fa-brands fa-github
