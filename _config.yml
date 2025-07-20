@@ -64,7 +64,7 @@ plugins:
 author:
   name   : Scott Blake
   avatar : /assets/images/bio-photo.png
-  bio    : My awesome biography constrained to a sentence or two goes here.
+  bio    : Senior Client Platform Engineer focused on real-world automation.
   location: Morgantown, WV
   links:
     - label: GitHub
