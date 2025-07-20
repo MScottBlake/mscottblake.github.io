@@ -1,8 +1,10 @@
 ---
 permalink: /about/
-title: "About"
+title: About
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hi, I’m Scott Blake, the voice behind _MacAdmin Musings_. :wave:
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I am a Senior Client Platform Engineer with a passion for automating and optimizing Apple management workflows. With years of experience in deploying and managing fleets of Apple devices, I’ve become obsessed with turning repetitive tasks into robust, repeatable, and documented workflows. I know firsthand what it's like to juggle daily operations, package deployments, and identity workflows. I’m not writing from theory—I’m writing from the trenches, where each day brings a new pipeline to build, a new script to tweak, and countless ways to automate repetitive tasks.
+
+This space is dedicated to you, the busy MacAdmin looking for practical insights that save time and reduce stress. Here, you'll find real-world examples and tested patterns for AutoPkg packaging and automations, infrastructure-as-code (IaC) with Terraform, and Okta-based identity flows—all aimed at making your Apple ecosystem more reliable, scalable, and manageable. This blog is a space to share those hard-earned wins—and the lessons learned along the way. I believe that sharing what works (and what doesn’t) benefits us all, and I’m excited to learn from your stories as well.
