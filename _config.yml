@@ -65,6 +65,7 @@ author:
   name   : Scott Blake
   avatar : /assets/images/bio-photo.png
   bio    : My awesome biography constrained to a sentence or two goes here.
+  location: Morgantown, WV
   links:
     - label: GitHub
       icon: fab fa-fw fa-brands fa-github
