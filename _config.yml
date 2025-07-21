@@ -18,10 +18,11 @@ subtitle: AutoPkg Automations, Terraform Tactics, and Identity Insights
 email: mitchelsblake@gmail.com
 description: >-
   AutoPkg Automations, Terraform Tactics, and Identity Insights
+minimal_mistakes_skin: default # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+locale: en-US
+search: true
 twitter_username: MScottBlake
 github_username: MScottBlake
-minimal_mistakes_skin: default # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
-search: true
 
 # Build settings
 markdown: kramdown
@@ -62,9 +63,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : Scott Blake
-  avatar : /assets/images/bio-photo.png
-  bio    : Senior Client Platform Engineer focused on real-world automation.
+  name: Scott Blake
+  avatar: /assets/images/bio-photo.png
+  bio: Senior Client Platform Engineer focused on real-world automation.
   location: Morgantown, WV
   links:
     - label: GitHub
