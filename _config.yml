@@ -34,9 +34,18 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+repository: mscottblake/mscottblake.github.io
 copyright: Scott Blake
 enable_copy_code_button: true
-
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id: R_kgDOPPvqdQ
+    category_name: Announcements
+    category_id: DIC_kwDOPPvqdc4CtOPo
+    discussion_term: pathname # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled: 1 # '1' for enabled (default), '0' for disabled
+    theme: light # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 
 include:
   - _pages
