@@ -20,8 +20,6 @@ description: >-
   AutoPkg Automations, Terraform Tactics, and Identity Insights
 minimal_mistakes_skin: default # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 locale: en-US
-twitter_username: MScottBlake
-github_username: MScottBlake
 
 # Build settings
 markdown: kramdown
@@ -103,6 +101,13 @@ analytics:
   google:
     tracking_id: "G-7Z78RJQLWP"
     anonymize_ip: false
+
+twitter:
+  username: MScottBlake
+github:
+  username: MScottBlake
+seo:
+  image: /assets/images/og-image.jpg
 
 footer:
   # since: 2025
