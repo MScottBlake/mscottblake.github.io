@@ -20,7 +20,6 @@ description: >-
   AutoPkg Automations, Terraform Tactics, and Identity Insights
 minimal_mistakes_skin: default # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
 locale: en-US
-search: true
 twitter_username: MScottBlake
 github_username: MScottBlake
 
@@ -71,6 +70,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 author:
   name: Scott Blake
@@ -94,8 +94,12 @@ author:
       icon: fab fa-fw fa-brands fa-x-twitter
       url: https://x.com/MScottBlake
 
+search: true
+lunr:
+  search_within_pages: true
+
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-7Z78RJQLWP"
     anonymize_ip: false
