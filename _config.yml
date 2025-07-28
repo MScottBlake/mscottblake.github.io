@@ -94,6 +94,12 @@ author:
       icon: fab fa-fw fa-brands fa-x-twitter
       url: https://x.com/MScottBlake
 
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-7Z78RJQLWP"
+    anonymize_ip: false
+
 footer:
   # since: 2025
   links:
