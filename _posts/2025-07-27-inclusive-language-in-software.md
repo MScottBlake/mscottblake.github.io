@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Writing Inclusive Software: Precision, Respect, and Automation"
 date: 2025-07-27T22:45:00-04:00
 categories: [blog, inclusivity, automation]
