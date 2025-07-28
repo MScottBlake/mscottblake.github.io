@@ -50,9 +50,6 @@ comments:
 include:
   - _pages
 
-header:
-  og_image: /assets/images/og-image.jpg
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -138,6 +135,8 @@ defaults:
       comments: true
       share: true
       related: true
+      header:
+        og_image: /assets/images/og-image.jpg
   # _pages
   - scope:
       path: "_pages"
@@ -145,6 +144,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
 
 category_archive:
   type: liquid
