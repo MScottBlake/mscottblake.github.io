@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="128px" height="128px"><svg version="1.1" id="SvgjsSvg1053" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" d="M68.145,25c-0.047,0.012-0.094-0.012-0.143-0.016L68.018,25H68.145z"></path>
+		<path fill="#E9B526" d="M126,42v-5.938C126,29.756,121.258,25,114.969,25H68.018l0.012,0.014L68,25h0.018l-0.016-0.016
+			c-0.064-0.004-0.129,0.01-0.188-0.02c-0.098-0.039-0.182-0.109-0.238-0.197L56.824,14H14.057C7.408,14,2,18.949,2,25.031V42H126z"></path>
+		<polygon fill="#CCCCCC" points="68.029,25.014 68.018,25 68,25 		"></polygon>
+		<path fill="#E8BB85" d="M114.969,33.5L14.057,34c-6.342,0-12.85,3.471-12.85,9.811C1.207,43.902,1.045,45.926,1,46
+			c-0.086,0.148,0.184,0,0,0c-0.02,0,0.02,0.002,0,0l1,56c0,6.281,5.746,12,12.057,12h100.912c6.082,0,11.031-5.383,11.031-12
+			V45.254v-3.479C124.602,37,120.189,33.5,114.969,33.5z"></path>
+		<path fill="#EF934A" d="M50.656,45.557C50.381,45.221,49.969,45,49.5,45h-34c-0.533,0-1,0.281-1.266,0.701
+			C14.088,45.934,14,46.207,14,46.5v6c0,0.828,0.672,1.5,1.5,1.5h34c0.826,0,1.5-0.672,1.5-1.5v-6
+			C51,46.141,50.867,45.816,50.656,45.557z"></path>
+	</g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M68,25h46.969c6.6,0,11.031,4.463,11.031,11.062V102c0,6.6-4.432,13-11.031,13H14.057C7.457,115,1,108.6,1,102V25.031
+			C1,18.432,7.457,14,14.057,14h42.975l10.998,11.014"></path>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M100,34H13.057C6.457,34,1,39.4,1,46"></path>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M126,45.254c0-6.602-4.432-11.754-11.031-11.754"></path>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M51,52.5c0,1.105-0.396,2.5-1.5,2.5h-34c-1.105,0-2.5-1.395-2.5-2.5v-6c0-1.104,1.395-1.5,2.5-1.5h34c1.104,0,1.5,0.396,1.5,1.5
+			V52.5z"></path>
+		
+			<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14" y1="62" x2="52" y2="62"></line>
+	</g>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
