@@ -1,8 +1,6 @@
 ---
 title: First post!
 date: 2025-07-20T19:46:53-04:00
-categories:
-  - blog
 ---
 
 Hello and welcome to MacAdmin Musings, a blog dedicated to the thoughts, tools, and techniques of a MacAdmin navigating today’s IT landscape.

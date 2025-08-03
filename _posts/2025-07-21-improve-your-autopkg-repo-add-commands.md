@@ -1,9 +1,7 @@
 ---
 title: Improve your AutoPkg repo-add Commands
 date: 2025-07-21T20:30:25-04:00
-categories:
-  - blog
-  - AutoPkg
+categories: [AutoPkg]
 ---
 
 Over the years, I have seen a lot of instances of one of these two snippets used to configure AutoPkg to add a list of recipe repositories.
