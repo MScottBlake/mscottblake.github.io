@@ -41,7 +41,7 @@ comments:
     repo_id: R_kgDOPPvqdQ
     category_name: Announcements
     category_id: DIC_kwDOPPvqdc4CtOPo
-    discussion_term: pathname # "pathname" (default), "url", "title", "og:title"
+    discussion_term: title # "pathname" (default), "url", "title", "og:title"
     reactions_enabled: 1 # '1' for enabled (default), '0' for disabled
     theme: light # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
 
