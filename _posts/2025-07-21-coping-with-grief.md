@@ -1,6 +1,8 @@
 ---
 title: Coping with Grief
 date: 2025-07-21T19:25:08-04:00
+redirect_from:
+  - /blog/coping-with-grief/
 ---
 
 I have been meaning to start some sort of blog for over a decade, but I kept putting it off. On 2024-04-28, after greiving for about a week, I woke up early, not able to sleep, and I started writing. The simple fact that I got these thoughts out of my head and written down allowed me to move forward. I told myself this day, that I would finally pull the trigger, and then (yet again) I just... didn't.
