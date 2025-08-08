@@ -4,6 +4,8 @@ date: 2025-07-27T22:45:00-04:00
 categories: [automation]
 tags: [inclusive-language, github-actions, pre-commit, best-practices]
 description: "How inclusive language leads to better software and how to enforce it using GitHub Actions and Pre-Commit."
+redirect_from:
+  - /blog/inclusivity/automation/inclusive-language-in-software/
 ---
 
 Inclusive language isn't just a social nicety—it's a powerful tool for building better software. Whether you're writing comments, documentation, variables, or interface strings, the words you choose shape how your software is perceived, understood, and maintained. In this post, we’ll explore why inclusive language matters, how it can lead to clearer, more precise communication, and how to enforce it automatically using GitHub Actions or Pre-Commit hooks.
