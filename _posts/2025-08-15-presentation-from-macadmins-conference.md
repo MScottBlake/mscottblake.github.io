@@ -26,6 +26,6 @@ Lastly, a copy of my slides and some other useful links are available in the [Pr
 
 As always, a huge thank you goes out to the entire MacAdmins Conference team for organizing an exceptional event once again. Their unwavering commitment to supporting and educating the MacAdmin community is truly inspiring. The conference provides a truly invaluable platform for sharing knowledge and networking.
 
-Thank you to everyone who attended my session, participated in the discussions, and asked insightful questions. I was mentally unprepared for the amount excitement and praise I received all week.
+Thank you to everyone who attended my session, participated in the discussions, and asked insightful questions. I was mentally unprepared for the amount excitement and praise I received all week. The imposter syndrome is real.
 
 ---
