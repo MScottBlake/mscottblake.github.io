@@ -20,7 +20,7 @@ If you missed the live session, you can now watch the full presentation here:
 
 {% include youtubePlayer.html id=page.youtubeId %}
 
-Lastly, a copy of my slides and some other useful links are available in the [Presentations](https://github.com/MScottBlake/Presentations) repoository of my GitHub repository.
+Lastly, a copy of my slides and some other useful links are available in the [Presentations](https://github.com/MScottBlake/Presentations) repoository in my GitHub.
 
 ## A Heartfelt Thank You
 
