@@ -58,19 +58,19 @@ cloud_autopkg_runner --recipe Firefox.pkg
 
 Here's a rundown of the key changes and improvements made to Cloud AutoPkg Runner since MacAdmins Conference 2025.
 
-### Inclusive Language Check (Added in [v0.15.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.15.1))
+### Inclusive Language Check ([v0.15.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.15.1))
 
 The inclusive language check is an automation that runs during Pull Requests to ensure the language used in the commits are non-derogatory, inclusive, and precise. You can read more about my philosophy on this in my previous post, [Writing Inclusive Software: Precision, Respect, and Automation](https://macadminmusings.com/blog/2025/07/27/inclusive-language-in-software/), and check the [code quality](https://github.com/MScottBlake/cloud-autopkg-runner/blob/main/.github/workflows/code_quality.yml) GitHub Actions workflow to see it in action.
 
-### Added `--autopkg-pref-file` CLI argument (Added in [v0.16.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.16.1))
+### Added `--autopkg-pref-file` CLI argument ([v0.16.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.16.1))
 
 This argument allows you to define a custom AutoPkg preference file to use. I also added `--prefs` to `autopkg run` calls to make sure to use the defined preferences whenever we are using AutoPkg.
 
-### Added Integration Tests (Added in [v0.18.0](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.18.0))
+### Added Integration Tests ([v0.18.0](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.18.0))
 
 I mentioned at the end of my presentation that one of the things I wanted to improve was automated integration tests. Since that talk, I have added tests for AWS S3, Azure Blob Storage, and Google Cloud Storage. These tests each spin up an emulator and runs tests to ensure that the metadata cache file is properly stored and retrieved for each cloud provider. You can now trust that the cache works reliably across providers without manually testing each one.
 
-### Added a `GitClient` class [v0.18.0](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.18.0))
+### Added a `GitClient` class ([v0.18.0](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.18.0))
 
 One of the questions I was asked most often during MacAdmins Conference 2025 related to `git`. Some existing tooling around AutoPkg performs automatic code commits of each recipe whenever a new version is downloaded and processed. I told most people at the time that I was hoping to be able to do that, but I couldn't figure out how to do it effectively while not alienating non-git users.
 
@@ -91,7 +91,7 @@ For a more thorough example, check out [git_worktree_example.py](https://github.
 
 It is not a full featured git wrapper at this time as my goal was to provide the common actions. If you find yourself needing additional `git` actions, I certainly welcome [pull requests](https://github.com/MScottBlake/cloud-autopkg-runner/pulls).
 
-### Refactored the `AutoPkgPrefs` class (Added in [v0.19.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.19.1))
+### Refactored the `AutoPkgPrefs` class ([v0.19.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.19.1))
 
 I originally made some assumptions that turned out to be wrong. I couldn't think of any reason why you would want more than a single instance of AutoPkg preferences at any given time, so I used the [singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern) to prevent multiple instances. I also viewed this as a read-only class, so I didn't add any ability to change values after instantiation.
 
@@ -100,7 +100,6 @@ Both of these decisions turned out to hinder workflows, so I refactored the `Aut
 One example of why this change matters is that by allowing multiple, configurable instances of `AutoPkgPrefs`, you can now easily configure distinct AutoPkg environments. This enables advanced workflows such as creating a `git worktree` and updating recipe paths within the worktree to point to local, isolated AutoPkg data, preventing conflicts with the main branch's preferences.
 
 You can see this in action in [this workflow](https://github.com/MScottBlake/cloud-autopkg-runner-examples/blob/main/.github/workflows/scheduled_python_run.yaml) (which calls [git_worktree_example.py](https://github.com/MScottBlake/cloud-autopkg-runner-examples/blob/main/examples/git_worktree_example.py)).
-
 
 ---
 
