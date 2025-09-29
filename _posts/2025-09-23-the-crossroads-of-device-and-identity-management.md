@@ -11,8 +11,6 @@ That skillset has served our industry well.
 
 I feel like the same story is repeating itself — this time with identity.
 
-<!--more-->
-
 ## Identity is the New Security Baseline
 
 At its core, identity management is about ensuring the right person has access to the right resources at the right time.
