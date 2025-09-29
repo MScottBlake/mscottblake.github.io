@@ -15,7 +15,7 @@ tags:
   - Threat Insights
 ---
 
-I spent that majority of the past week in Las Vegas for [Oktane](https://www.okta.com/oktane/). Conferences like these do a great job at immersing attendees. I've been living, breathing, and thinking [Okta](https://www.okta.com/) for days. It was an incredible experience full of sessions, conversations, F1 cars, and puppies. I even got the chance to see The Wizard of Oz at Sphere (which was amazing) with some friends old and new after the conference.
+I spent the majority of the past week in Las Vegas for [Oktane](https://www.okta.com/oktane/). Conferences like these do a great job at immersing attendees. I've been living, breathing, and thinking [Okta](https://www.okta.com/) for days. It was an incredible experience full of sessions, conversations, F1 cars, and puppies. I even got the chance to see The Wizard of Oz at Sphere (which was amazing) with some friends old and new after the conference.
 
 Much of the keynote focus this year was on AI agents and [Cross App Access](https://www.okta.com/integrations/cross-app-access/) and while those are certainly interesting topics, I was primarily focussed on device trust and authentication policies this year. As a MacAdmin walking the expo floor and attending sessions, I had a slightly different point of view from many who live the identity mangement life every day.
 
