@@ -16,6 +16,7 @@ tags:
 This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.
 
 Previously: [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
+
 Up Next: Variables and Secrets (Coming soon!)
 
 ## Getting Started
