@@ -121,8 +121,7 @@ In our example, we are using the axm provider, so the contents of `providers.tf`
   }
   ```
 
-> [!CAUTION]
-> It is recommended that you do not enter secret values here. We will fix this in the next post when we talk about variables.
+> ⚠️ It is recommended that you do not enter secret values here. We will fix this in the next post when we talk about variables.
 
 Alternatively, you can set environment variables for `AXM_CLIENT_ID`, `AXM_KEY_ID`, `AXM_PRIVATE_KEY`, and `AXM_SCOPE`. Any value that is set in those environment variables can be omitted from the `provider` block. You can even define it with no values if everything is being set by environment variable.
 
