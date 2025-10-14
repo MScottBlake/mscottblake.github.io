@@ -129,6 +129,8 @@ Alternatively, you can set environment variables for `AXM_CLIENT_ID`, `AXM_KEY_I
   provider "axm" {}
   ```
 
+The `scope` value will depend on which portal you are using. Enter `school.api` for Apple School Manager and `business.api` for Apple Business Manager.
+
 At this point, your project folder should contain:
 
   ```sh
