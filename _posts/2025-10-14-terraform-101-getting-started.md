@@ -41,27 +41,27 @@ The easiest way to install Terraform is to use [Homebrew](https://brew.sh/).
 
 First, install the HashiCorp's official tap containing all of their Homebrew packages.
 
-  ```sh
-  brew tap hashicorp/tap
-  ```
+```sh
+brew tap hashicorp/tap
+```
 
 Then, install Terraform from hashicorp/tap/terraform.
 
-  ```sh
-  brew install hashicorp/tap/terraform
-  ```
+```sh
+brew install hashicorp/tap/terraform
+```
 
 Optionally, you can install tab completion in your shell.
 
-  ```sh
-  terraform -install-autocomplete
-  ```
+```sh
+terraform -install-autocomplete
+```
 
 Lastly, verify that the installation is working correctly.
 
-  ```sh
-  terraform -version
-  ```
+```sh
+terraform -version
+```
 
 For more detailed installation instructions, check out Hashicorp's [installation documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
 
@@ -71,31 +71,31 @@ A Terraform project is any directory containing `.tf` files that has been initia
 
 With that knowledge, let's create a directory called *terraform*. We'll use this as our working directory moving forward.
 
-  ```sh
-  mkdir terraform
-  cd terraform
-  ```
+```sh
+mkdir terraform
+cd terraform
+```
 
 Now we'll create a `.tf` file. This file can be named whatever you want. For now, let's call it `terraform.tf`.
 
-  ```sh
-  touch terraform.tf
-  ```
+```sh
+touch terraform.tf
+```
 
 Open this file in your editor of choice so that we can build out its contents.
 
-  ```hcl
-  terraform {
-    required_providers {
-      axm = {
-        source  = "neilmartin83/axm"
-        version = "~> 1.2"
-      }
+```hcl
+terraform {
+  required_providers {
+    axm = {
+      source  = "neilmartin83/axm"
+      version = "~> 1.2"
     }
-
-    required_version = ">= 1.13"
   }
-  ```
+
+  required_version = ">= 1.13"
+}
+```
 
 Let's talk about what this means. We have a `terraform {}` block that defines the terraform CLI version requirements (`required_version`) as well as the provider requirements (`required_providers`) for this project.
 
@@ -107,48 +107,48 @@ Terraform doesn't care how the configurations are organized as long as they are 
 
 I like to separate out the `terraform` and `provider` blocks into their own files, so let's create a new `providers.tf` file.
 
-  ```sh
-  touch providers.tf
-  ```
+```sh
+touch providers.tf
+```
 
 The contents of that file will depend on the provider you are using. In Each provider configuration will be different. Basically, this is where you define authentication for the system you are trying to integrate.
 
 In our example, we are using the axm provider, so the contents of `providers.tf` will depend on your credentials from Apple School Manager or Apple Business Manager.
 
-  ```hcl
-  provider "axm" {
-    client_id   = "BUSINESSAPI.abcdef12-3456-4789-abcd-ef1234567890"
-    key_id      = "98765432-dcba-4321-9876-543210fedcba"
-    private_key = file("/path/to/private_key.pem")
-    scope       = "business.api"
-  }
-  ```
+```hcl
+provider "axm" {
+  client_id   = "BUSINESSAPI.abcdef12-3456-4789-abcd-ef1234567890"
+  key_id      = "98765432-dcba-4321-9876-543210fedcba"
+  private_key = file("/path/to/private_key.pem")
+  scope       = "business.api"
+}
+```
 
 > ⚠️ It is recommended that you do not enter secret values here. We will fix this in the next post when we talk about variables.
 
 Alternatively, you can set environment variables for `AXM_CLIENT_ID`, `AXM_KEY_ID`, `AXM_PRIVATE_KEY`, and `AXM_SCOPE`. Any value that is set in those environment variables can be omitted from the `provider` block. You can even define it with no values if everything is being set by environment variable.
 
-  ```hcl
-  provider "axm" {}
-  ```
+```hcl
+provider "axm" {}
+```
 
 The `scope` value will depend on which portal you are using. Enter `school.api` for Apple School Manager and `business.api` for Apple Business Manager.
 
 At this point, your project directory should contain:
 
-  ```sh
-  terraform/
-  ├── providers.tf
-  └── terraform.tf
-  ```
+```sh
+terraform/
+├── providers.tf
+└── terraform.tf
+```
 
 ## Initialization
 
 Now that we have `terraform {}` and `provider {}` blocks, it's time to initialize the terraform directory.
 
-  ```sh
-  terraform init
-  ```
+```sh
+terraform init
+```
 
 After running `terraform init`, you’ll see a new `.terraform` directory. This stores plugin binaries and local state information. You shouldn't need to modify anything within this directory.
 
