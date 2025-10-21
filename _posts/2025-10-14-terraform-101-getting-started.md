@@ -16,11 +16,13 @@ header:
     og_image: /assets/images/posts/HashiCorpTerraform.png
 ---
 
-This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.
+*This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.*
 
-Previously: [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
+Previously: [Introduction](/blog/2025/10/14/terraform-101-introduction/)
 
-Up Next: Variables and Secrets (Coming soon!)
+Up Next: [Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets)
+
+---
 
 ## Getting Started
 
@@ -158,4 +160,4 @@ At this point, you have Terraform installed, configured, and ready to talk to Ap
 
 In the next post, we’ll introduce variables: the key to making your configurations reusable, modular, and secure.
 
-Up Next: Terraform 101: Variables and Secrets (Coming soon!)
+Up Next: [Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets)

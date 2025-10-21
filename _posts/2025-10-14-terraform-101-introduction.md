@@ -78,4 +78,4 @@ My goal with this series is to help you reach that moment faster, with examples 
 
 In the next post, we’ll get hands-on: setting up Terraform, installing the necessary tools, and connecting to the Apple School or Business Manager API using Neil Martin’s `axm` provider.
 
-[Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
+[Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
