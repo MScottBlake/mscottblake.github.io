@@ -30,15 +30,11 @@ That worked fine for a quick test, but we hardcoded sensitive information direct
 
 In this post, we'll clean that up by using variables, `.tfvars` files, and environment variables. These are essential for making your configurations reusable and secure.
 
----
-
 ## Why Variables Matter
 
 Terraform variables let you make your code flexible without hardcoding values. Think of them like placeholders: you define a variable once, and then reference it throughout your configuration.
 
 Without variables, you'd have to manually edit credentials, region names, or identifiers in multiple files whenever they change. With variables, you just change one place.
-
----
 
 ## Declare a Variable
 
@@ -145,7 +141,7 @@ terraform apply -var "client_id=BUSINESSAPI.abcdef12-3456-4789-abcd-ef1234567890
 
 This may be fine for quick tests, but not ideal for longer-term projects. It is cumbersome to maintain and the values can show up in shell history, causing security concerns. This approach is not recommended for anything sensitive.
 
-### `.tfvars` File
+### TFVars File
 
 Create a file named `terraform.tfvars` in your project directory. Terraform will automatically loads this file when you run `terraform plan` or `terraform apply`.
 
