@@ -83,9 +83,7 @@ Resources are defined as `resource "type" "label" {}`. You can use the [Teraform
 
 Resources describe **what Terraform should create or manage**. In the `axm` provider, there’s one key resource: `axm_device_management_service`.
 
-This resource represents a Device Management server record within Apple School or Business Manager.
-
-Here’s a simple example:
+This resource represents a Device Management assignment within Apple School or Business Manager.
 
 ```hcl
 resource "axm_device_management_service" "iru" {
@@ -108,9 +106,9 @@ Normally, the resource would include other fields like a name, and Terraform wou
 
 ## Data Sources: Reading What Already Exists
 
-Data sources are **read-only**. They let you query Apple Business Manager for existing information and use it inside your configuration. They are declared just like resources, except you use the `data` keyword instead.
+Data sources are **read-only**. They are declared just like resources, except you use the `data` keyword instead.
 
-Here are a few examples:
+Here are a few examples of querying Apple Business Manager for existing information:
 
 ### List all Device Management Services
 
