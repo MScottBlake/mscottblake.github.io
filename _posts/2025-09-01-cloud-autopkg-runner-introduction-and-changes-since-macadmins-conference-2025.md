@@ -2,8 +2,8 @@
 title: "Cloud AutoPkg Runner: Introduction and Changes Since MacAdmins Conference 2025"
 date: 2025-09-01 20:48:30 -0400
 header:
-    teaser: /assets/images/posts/AutoPkgRunner.png
-    og_image: /assets/images/posts/AutoPkgRunner.png
+  teaser: /assets/images/posts/AutoPkgRunner.png
+  og_image: /assets/images/posts/AutoPkgRunner.png
 categories: ["AutoPkg", "Cloud AutoPkg Runner", "Presentation"]
 tags:
   - AutoPkg

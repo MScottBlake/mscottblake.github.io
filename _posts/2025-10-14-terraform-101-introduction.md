@@ -21,8 +21,8 @@ tags:
   - Fleet Device Management
 youtubeId: 38ayowbtW2o
 header:
-    teaser: /assets/images/posts/HashiCorpTerraform.png
-    og_image: /assets/images/posts/HashiCorpTerraform.png
+  teaser: /assets/images/posts/HashiCorpTerraform.png
+  og_image: /assets/images/posts/HashiCorpTerraform.png
 ---
 
 If you've tried to get into Infrastructure as Code (IaC) in the past and felt overwhelmed, you are not alone. This is going to be the first installment of a series of posts where I'm going to dive into [Terraform](https://www.hashicorp.com/en/products/terraform). What is it and why use it? Where do we start? All valid questions and all things I hope to cover.

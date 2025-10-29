@@ -12,15 +12,15 @@ tags:
   - Apple School Manager
   - Apple Business Manager
 header:
-    teaser: /assets/images/posts/HashiCorpTerraform.png
-    og_image: /assets/images/posts/HashiCorpTerraform.png
+  teaser: /assets/images/posts/HashiCorpTerraform.png
+  og_image: /assets/images/posts/HashiCorpTerraform.png
 ---
 
 *This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.*
 
 Previously: [Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
 
-Up Next: Resources and Data Sources (Coming soon!)
+Up Next: [Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
 
 ---
 
@@ -215,4 +215,4 @@ By moving sensitive information out of your configuration and into variables, yo
 
 In the next post, we’ll start using resources and data sources. These are the primary building blocks of every Terraform project. We’ll create real objects through the Apple APIs and learn how Terraform reads existing ones.
 
-Up Next: Resources and Data Sources (Coming soon!)
+Up Next: [Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)

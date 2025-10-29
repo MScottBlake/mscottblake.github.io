@@ -12,8 +12,8 @@ tags:
   - Apple Business Manager
   - Homebrew
 header:
-    teaser: /assets/images/posts/HashiCorpTerraform.png
-    og_image: /assets/images/posts/HashiCorpTerraform.png
+  teaser: /assets/images/posts/HashiCorpTerraform.png
+  og_image: /assets/images/posts/HashiCorpTerraform.png
 ---
 
 *This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.*
