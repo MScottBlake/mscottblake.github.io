@@ -216,3 +216,13 @@ By moving sensitive information out of your configuration and into variables, yo
 In the next post, we’ll start using resources and data sources. These are the primary building blocks of every Terraform project. We’ll create real objects through the Apple APIs and learn how Terraform reads existing ones.
 
 Up Next: [Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
+
+---
+
+## Series Index
+
+1. [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
+1. [Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
+1. Terraform 101: Variables and Secrets
+1. [Terraform 101: Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
+1. [Terraform 101: Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)

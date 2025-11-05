@@ -26,7 +26,7 @@ header:
 
 Previously: [Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets/)
 
-Up Next: Command Line Interface (Coming soon!)
+Up Next: [Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)
 
 ---
 
@@ -165,4 +165,14 @@ Resources and data sources are the backbone of Terraform. They define what you w
 
 In the next post, we’ll see these concepts in action — using Terraform’s CLI commands like `plan` and `apply` to preview and apply changes, and watching how Terraform figures out what needs to happen to reach your declared state.
 
-Up Next: Command Line Interface (Coming soon!)
+Up Next: [Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)
+
+---
+
+## Series Index
+
+1. [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
+1. [Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
+1. [Terraform 101: Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets/)
+1. Terraform 101: Resources and Data Sources
+1. [Terraform 101: Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)
