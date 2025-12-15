@@ -1,7 +1,8 @@
 ---
 title: "Terraform 101: Variables and Secrets"
 date: 2025-10-20 21:33:00 -0400
-categories: ["Terraform"]
+categories:
+  - Terraform
 series: "Terraform 101"
 series_order: 3
 tags:
@@ -16,7 +17,7 @@ header:
   og_image: /assets/images/posts/HashiCorpTerraform.png
 ---
 
-*This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.*
+_This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments._
 
 Previously: [Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
 
@@ -40,7 +41,7 @@ Without variables, you'd have to manually edit credentials, region names, or ide
 
 In most programming languages, you need to define a variable before you can use it. For example, in Java, you would add something like `int variable_name = value;` before you could use `variable_name` in the code.
 
-In Terraform, the concept is the same, but the syntax is different. We use the *variable block*.
+In Terraform, the concept is the same, but the syntax is different. We use the _variable block_.
 
 When you define a variable, you are telling Terraform that a given `variable_name` is available for use. Optionally, you can add more data such as a `type` (string, integer, etc.), `description`, `default` value, and more.
 
@@ -50,7 +51,7 @@ Here's what that looks like in practice:
 variable "database_password" {
   description = "The password to use to connect to the database."
   type        = string
-  sensitive   = True
+  sensitive   = true
 }
 ```
 
@@ -58,7 +59,7 @@ The official documentation describes the [variable block](https://developer.hash
 
 ## Defining Variables
 
-Now that we know all about the *variable block*, let’s update our project. We'll start by creating a new file called `variables.tf` within the same project directory we used in the last post.
+Now that we know all about the _variable block_, let’s update our project. We'll start by creating a new file called `variables.tf` within the same project directory we used in the last post.
 
 ```sh
 touch variables.tf
@@ -80,7 +81,7 @@ variable "key_id" {
 variable "private_key_path" {
   description = "Path to the Apple Business Manager API private key (.pem) file"
   type        = string
-  sensitive   = True
+  sensitive   = true
 }
 
 variable "scope" {
@@ -90,7 +91,7 @@ variable "scope" {
 }
 ```
 
->📝 Note that this file does not contain the actual values of your variables. It only defines each variable's metadata. We'll provide the values soon.
+> 📝 Note that this file does not contain the actual values of your variables. It only defines each variable's metadata. We'll provide the values soon.
 
 The updated project directory should now contain:
 
