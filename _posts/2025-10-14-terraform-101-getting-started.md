@@ -18,9 +18,9 @@ header:
 
 *This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.*
 
-Previously: [Introduction](/blog/2025/10/14/terraform-101-introduction/)
+Previously: [Introduction]({% post_url 2025-10-14-terraform-101-introduction %})
 
-Up Next: [Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets)
+Up Next: [Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-and-secrets %})
 
 ---
 
@@ -160,14 +160,14 @@ At this point, you have Terraform installed, configured, and ready to talk to Ap
 
 In the next post, we’ll introduce variables: the key to making your configurations reusable, modular, and secure.
 
-Up Next: [Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets)
+Up Next: [Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-and-secrets %})
 
 ---
 
 ## Series Index
 
-1. [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
+1. [Terraform 101: Introduction]({% post_url 2025-10-14-terraform-101-introduction %})
 1. Terraform 101: Getting Started
-1. [Terraform 101: Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets/)
-1. [Terraform 101: Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
-1. [Terraform 101: Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)
+1. [Terraform 101: Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-and-secrets %})
+1. [Terraform 101: Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
+1. [Terraform 101: Command Line Interface]({% post_url 2025-11-05-terraform-101-command-line-interface %})

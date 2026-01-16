@@ -78,14 +78,14 @@ My goal with this series is to help you reach that moment faster, with examples 
 
 In the next post, we’ll get hands-on: setting up Terraform, installing the necessary tools, and connecting to the Apple School or Business Manager API using Neil Martin’s `axm` provider.
 
-[Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
+[Getting Started]({% post_url 2025-10-14-terraform-101-getting-started %})
 
 ---
 
 ## Series Index
 
 1. Terraform 101: Introduction
-1. [Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
-1. [Terraform 101: Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets/)
-1. [Terraform 101: Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
-1. [Terraform 101: Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)
+1. [Terraform 101: Getting Started]({% post_url 2025-10-14-terraform-101-getting-started %})
+1. [Terraform 101: Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-and-secrets %})
+1. [Terraform 101: Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
+1. [Terraform 101: Command Line Interface]({% post_url 2025-11-05-terraform-101-command-line-interface %})

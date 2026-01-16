@@ -19,9 +19,9 @@ header:
 
 _This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments._
 
-Previously: [Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
+Previously: [Getting Started]({% post_url 2025-10-14-terraform-101-getting-started %})
 
-Up Next: [Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
+Up Next: [Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
 
 ---
 
@@ -146,7 +146,7 @@ This may be fine for quick tests, but not ideal for longer-term projects. It is 
 
 Create a file named `terraform.tfvars` in your project directory. Terraform will automatically loads this file when you run `terraform plan` or `terraform apply`.
 
-Inside it, add your unique values that we retreived from the Apple School or Business Manager console in [Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/).
+Inside it, add your unique values that we retreived from the Apple School or Business Manager console in [Terraform 101: Getting Started]({% post_url 2025-10-14-terraform-101-getting-started %}).
 
 ```hcl
 client_id        = "BUSINESSAPI.abcdef12-3456-4789-abcd-ef1234567890"
@@ -216,14 +216,14 @@ By moving sensitive information out of your configuration and into variables, yo
 
 In the next post, we’ll start using resources and data sources. These are the primary building blocks of every Terraform project. We’ll create real objects through the Apple APIs and learn how Terraform reads existing ones.
 
-Up Next: [Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
+Up Next: [Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
 
 ---
 
 ## Series Index
 
-1. [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
-1. [Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
+1. [Terraform 101: Introduction]({% post_url 2025-10-14-terraform-101-introduction %})
+1. [Terraform 101: Getting Started]({% post_url 2025-10-14-terraform-101-getting-started %})
 1. Terraform 101: Variables and Secrets
-1. [Terraform 101: Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
-1. [Terraform 101: Command Line Interface](/blog/2025/11/05/terraform-101-command-line-interface/)
+1. [Terraform 101: Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
+1. [Terraform 101: Command Line Interface]({% post_url 2025-11-05-terraform-101-command-line-interface %})

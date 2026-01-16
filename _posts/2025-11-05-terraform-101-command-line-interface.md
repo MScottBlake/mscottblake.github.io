@@ -21,7 +21,7 @@ header:
 
 *This post is part of my Terraform 101 series, exploring how MacAdmins can use Infrastructure as Code to manage Apple environments.*
 
-Previously: [Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
+Previously: [Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
 
 ---
 
@@ -196,8 +196,8 @@ Lastly, if you’ve made it this far: thank you. I hope this series helped demys
 
 ## Series Index
 
-1. [Terraform 101: Introduction](/blog/2025/10/14/terraform-101-introduction/)
-1. [Terraform 101: Getting Started](/blog/2025/10/14/terraform-101-getting-started/)
-1. [Terraform 101: Variables and Secrets](/blog/2025/10/20/terraform-101-variables-and-secrets/)
-1. [Terraform 101: Resources and Data Sources](/blog/2025/10/28/terraform-101-resources-and-data-sources/)
+1. [Terraform 101: Introduction]({% post_url 2025-10-14-terraform-101-introduction %})
+1. [Terraform 101: Getting Started]({% post_url 2025-10-14-terraform-101-getting-started %})
+1. [Terraform 101: Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-and-secrets %})
+1. [Terraform 101: Resources and Data Sources]({% post_url 2025-10-28-terraform-101-resources-and-data-sources %})
 1. Terraform 101: Command Line Interface

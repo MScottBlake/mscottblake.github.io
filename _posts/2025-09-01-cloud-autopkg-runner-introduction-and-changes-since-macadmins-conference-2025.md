@@ -29,7 +29,7 @@ tags:
   - development update
 ---
 
-It's been a few weeks since the MacAdmins Conference at Penn State University where I got to introduce Cloud AutoPkg Runner to the community in my talk, _Celebrating AutoPkg with a new Runner_. If you missed the session or want to re-watch the video, check out this [post](https://macadminmusings.com/blog/2025/08/15/presentation-from-macadmins-conference/) I made when the video went live.
+It's been a few weeks since the MacAdmins Conference at Penn State University where I got to introduce Cloud AutoPkg Runner to the community in my talk, _Celebrating AutoPkg with a new Runner_. If you missed the session or want to re-watch the video, check out this [post]({% post_url 2025-08-15-presentation-from-macadmins-conference %}) I made when the video went live.
 
 The feedback and excitement I've received since then have been incredibly encouraging! I'm thrilled to see the community's enthusiasm and the valuable feedback that has already helped shape the project. Since the presentation, I've been busy pushing several updates to the library to enhance its stability and user experience.
 
@@ -60,7 +60,7 @@ Here's a rundown of the key changes and improvements made to Cloud AutoPkg Runne
 
 ### Inclusive Language Check ([v0.15.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.15.1))
 
-The inclusive language check is an automation that runs during Pull Requests to ensure the language used in the commits are non-derogatory, inclusive, and precise. You can read more about my philosophy on this in my previous post, [Writing Inclusive Software: Precision, Respect, and Automation](https://macadminmusings.com/blog/2025/07/27/inclusive-language-in-software/), and check the [code quality](https://github.com/MScottBlake/cloud-autopkg-runner/blob/main/.github/workflows/code_quality.yml) GitHub Actions workflow to see it in action.
+The inclusive language check is an automation that runs during Pull Requests to ensure the language used in the commits are non-derogatory, inclusive, and precise. You can read more about my philosophy on this in my previous post, [Writing Inclusive Software: Precision, Respect, and Automation]({% post_url 2025-07-27-inclusive-language-in-software %}), and check the [code quality](https://github.com/MScottBlake/cloud-autopkg-runner/blob/main/.github/workflows/code_quality.yml) GitHub Actions workflow to see it in action.
 
 ### Added `--autopkg-pref-file` CLI argument ([v0.16.1](https://github.com/MScottBlake/cloud-autopkg-runner/releases/tag/v0.16.1))
 
