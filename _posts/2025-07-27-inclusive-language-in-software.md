@@ -6,7 +6,7 @@ categories:
 tags:
   - Inclusive Language
   - Github Actions
-  - Pre-commit
+  - Pre-Commit
 description: "How inclusive language leads to better software and how to enforce it using GitHub Actions and Pre-Commit."
 redirect_from:
   - /blog/inclusivity/automation/inclusive-language-in-software/

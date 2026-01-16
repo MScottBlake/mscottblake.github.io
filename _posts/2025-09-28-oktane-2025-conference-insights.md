@@ -21,7 +21,7 @@ I spent the majority of the past week in Las Vegas for [Oktane](https://www.okta
 
 Much of the keynote focus this year was on AI agents and [Cross App Access](https://www.okta.com/integrations/cross-app-access/) and while those are certainly interesting topics, I was primarily focussed on device trust and authentication policies this year. As a MacAdmin walking the expo floor and attending sessions, I had a slightly different point of view from many who live the identity mangement life every day.
 
-### Sessions that Stood Out
+## Sessions that Stood Out
 
 I attended a session on [Okta Desktop MFA](https://www.okta.com/blog/product-innovation/secure-your-devices-with-oktas-desktop-mfa/) by fellow MacAdmin [Nathaniel Strauss](https://nwstrauss.com/) and his teammate, Chris Durham. They spoke about using Okta to login to macOS and Windows directly. To set it up, there are a few prerequisites, but nothing that seems particularly difficult. This type of solution highlights some of the topics I referenced in my last post. As MacAdmins, we need to be ready to manage certificates and trust chains in ways that directly affect how our users sign in. This is a tool that my team will likely evaluate. Comment below if you're interested in a deeper dive and I might post it here.
 
@@ -29,7 +29,7 @@ Another highlight was a session that showed how [Box](https://www.box.com/) is c
 
 I also attended a couple security-related sessions that spoke to me. One really hammered home the idea that you should always explain the "why" to achieve buy-in from your collegues and create a security-minded culture. I think that resonated with me because I have seen first-hand that the more transparent you are about changes, the more people respect the decisions that have been made and they are less likely to cause issues with deployments. The other session explained that Okta Threat Insights was a sort of "herd immunity." Every time you use FastPass, you are sending signals back to Okta that are then used as aggregated data to track trends in phishing and other attacks. They noted that one of the recent trends they are seeing is called _MFA downgrade_ where adversaries are directing users to use less secure login factors as part of their phishing attacks. It's a reminder that enabling FastPass is not enough to protect your organization, it's also important to remove less secure authenticators.
 
-### Conversations on the Expo Floor
+## Conversations on the Expo Floor
 
 As always, some of the most practical insights came from the hallways and vendor booths, not from the stage.
 
@@ -37,7 +37,7 @@ I spent some time talking to the Chrome Enterprise team about their Okta integra
 
 There were also vendors showing off their approach to protecting Okta configurations. One backup solution looked and felt like a git interface for identity objects, displaying changes line by line before restoring. These solutions highlight that identity provider settings have become too critical to continue without a disaster recovery solution, and the patterns we’ve used for device management (such as version control) are showing up here too.
 
-### Takeaways
+## Takeaways
 
 Overall, as someone who focuses on devices with a side of identity, I often felt like an outsider. Despite that, I would definitely go again. With any luck, that'll be in 2026.
 

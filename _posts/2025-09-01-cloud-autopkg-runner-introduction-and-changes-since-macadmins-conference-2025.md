@@ -6,7 +6,6 @@ header:
   og_image: /assets/images/posts/AutoPkgRunner.png
 categories:
   - AutoPkg
-  - Cloud AutoPkg Runner
   - Presentation
 tags:
   - AutoPkg
@@ -14,22 +13,21 @@ tags:
   - macOS
   - MacAdmins
   - CI/CD
-  - automation
+  - Automation
   - Python
-  - open source
-  - package management
-  - git
-  - git client
-  - singleton pattern
-  - integration testing
+  - Open Source
+  - Package Management
+  - Git
+  - Singleton Pattern
+  - Integration Testing
   - AWS
   - Azure
   - Google Cloud
-  - cloud storage
-  - inclusive language
-  - code quality
+  - Cloud Storage
+  - Inclusive Language
+  - Code Quality
   - CLI
-  - development update
+  - Development Update
 ---
 
 It's been a few weeks since the MacAdmins Conference at Penn State University where I got to introduce Cloud AutoPkg Runner to the community in my talk, _Celebrating AutoPkg with a new Runner_. If you missed the session or want to re-watch the video, check out this [post]({% post_url 2025-08-15-presentation-from-macadmins-conference %}) I made when the video went live.
