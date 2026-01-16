@@ -1,7 +1,8 @@
 ---
 title: "Terraform 101: Resources and Data Sources"
 date: 2025-10-28 22:44:00 -0400
-categories: ["Terraform"]
+categories:
+  - Terraform
 series: "Terraform 101"
 series_order: 4
 tags:

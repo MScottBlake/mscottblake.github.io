@@ -1,7 +1,8 @@
 ---
 title: "Terraform 101: Getting Started"
 date: 2025-10-14 19:17:00 -0400
-categories: ["Terraform"]
+categories:
+  - Terraform
 series: "Terraform 101"
 series_order: 2
 tags:

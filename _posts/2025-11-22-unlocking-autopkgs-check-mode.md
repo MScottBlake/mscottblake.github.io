@@ -1,7 +1,8 @@
 ---
 title: "Unlocking AutoPkg’s Check Mode"
 date: 2025-11-22 22:20:00 -0400
-categories: ["AutoPkg"]
+categories:
+  - AutoPkg
 tags:
   - AutoPkg
   - CI/CD
@@ -24,7 +25,7 @@ When you run a recipe with:
 autopkg run Zoom.pkg --check
 ```
 
-AutoPkg performs a real run of the recipe  until it reaches a processor named *EndOfCheckPhase*. At that point, it stops. Recipe authors explicitly declare where the check phase ends based on where they place the processor in their recipes.
+AutoPkg performs a real run of the recipe until it reaches a processor named _EndOfCheckPhase_. At that point, it stops. Recipe authors explicitly declare where the check phase ends based on where they place the processor in their recipes.
 
 ---
 
@@ -34,7 +35,7 @@ Here’s the actual lifecycle when you invoke `--check`:
 
 ### 1. AutoPkg validates the recipe
 
-Before processing begins, AutoPkg scans the recipe  for a processor named `EndOfCheckPhase`. If none is found, it logs an error:
+Before processing begins, AutoPkg scans the recipe for a processor named `EndOfCheckPhase`. If none is found, it logs an error:
 
 > Recipe at Zoom.pkg is missing EndOfCheckPhase Processor, not possible to perform check.
 
@@ -42,22 +43,22 @@ This ensures the recipe has a defined stopping point.
 
 ### 2. AutoPkg runs processors normally
 
-Every processor *before* `EndOfCheckPhase` runs exactly as it would during a full run:
+Every processor _before_ `EndOfCheckPhase` runs exactly as it would during a full run:
 
-* Downloads occur
-* Inputs and outputs are populated
-* Caches are written
-* Archives are unpacked
-* Metadata is extracted and compared
-* Code signatures are verified
+- Downloads occur
+- Inputs and outputs are populated
+- Caches are written
+- Archives are unpacked
+- Metadata is extracted and compared
+- Code signatures are verified
 
 ### 3. AutoPkg halts when it reaches `EndOfCheckPhase`
 
 This processor acts as a sentinel. As soon as AutoPkg encounters it, check mode stops execution immediately. This means that if you define a post-processor, it will not run. I believe that pre-processors run since they are added to the front end of the process array.
 
-*If I am wrong, please correct me in the comments.*
+_If I am wrong, please correct me in the comments._
 
-Ideally, processors that  perform heavyweight or destructive work such as unarchiving, packaging, code signing,  imports, etc.  are never reached. More on this later.
+Ideally, processors that perform heavyweight or destructive work such as unarchiving, packaging, code signing, imports, etc. are never reached. More on this later.
 
 ### 4. Cached artifacts remain available
 
@@ -97,7 +98,7 @@ If nothing was downloaded, all of that processing is unnecessary, and if you are
 
 ### An alternative: a custom processor
 
-You may find cases where a custom processor is necessary to gather metadata. If that processor is able to  determine whether a new version exists *without downloading anything*, that could be a good place to stop.
+You may find cases where a custom processor is necessary to gather metadata. If that processor is able to determine whether a new version exists _without downloading anything_, that could be a good place to stop.
 
 In those cases, placing `EndOfCheckPhase` after the metadata processor avoids unnecessary downloads.
 
@@ -123,10 +124,10 @@ Check runs complete faster and help you build pipelines where metadata determine
 
 ### Warm the cache for subsequent runs
 
-If a new version *does* exist, the downloaded file is cached during the check run, making the full run faster.
+If a new version _does_ exist, the downloaded file is cached during the check run, making the full run faster.
 
 ---
 
 ## A Note on Cloud AutoPkg Runner
 
-Although it's not the focus of this post, I feel it's worth mentioning that this exact mechanism  is what powers Cloud AutoPkg Runner. The service relies on `--check` to evaluate recipes efficiently and decide when a full run is needed. This is one of several ways it processes AutoPkg recipe lists faster.
+Although it's not the focus of this post, I feel it's worth mentioning that this exact mechanism is what powers Cloud AutoPkg Runner. The service relies on `--check` to evaluate recipes efficiently and decide when a full run is needed. This is one of several ways it processes AutoPkg recipe lists faster.

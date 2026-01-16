@@ -4,7 +4,10 @@ date: 2025-09-01 20:48:30 -0400
 header:
   teaser: /assets/images/posts/AutoPkgRunner.png
   og_image: /assets/images/posts/AutoPkgRunner.png
-categories: ["AutoPkg", "Cloud AutoPkg Runner", "Presentation"]
+categories:
+  - AutoPkg
+  - Cloud AutoPkg Runner
+  - Presentation
 tags:
   - AutoPkg
   - Cloud AutoPkg Runner

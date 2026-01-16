@@ -1,7 +1,8 @@
 ---
 title: "Terraform 101: Command Line Interface"
 date: 2025-11-05 18:47:00 -0400
-categories: ["Terraform"]
+categories:
+  - Terraform
 series: "Terraform 101"
 series_order: 5
 tags:

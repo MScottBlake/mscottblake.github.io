@@ -1,7 +1,8 @@
 ---
 title: "Writing Code That Lasts: Demystifying the Law of Demeter"
 date: 2025-08-04T12:58:00-04:00
-categories: [Python]
+categories:
+  - Python
 tags:
   - Low Coupling
   - Law of Demeter

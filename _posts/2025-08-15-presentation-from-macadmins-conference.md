@@ -1,7 +1,9 @@
 ---
 title: "Presentation from MacAdmins Conference 2025"
 date: 2025-08-15 11:47:58 -0400
-categories: ["AutoPkg", "Presentation"]
+categories:
+  - AutoPkg
+  - Presentation
 header:
     teaser: /assets/images/posts/PSUMacAdmins2025.jpg
     og_image: /assets/images/posts/PSUMacAdmins2025.jpg

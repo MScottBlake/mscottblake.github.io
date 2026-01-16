@@ -4,7 +4,8 @@ date: 2025-08-17 16:54:40 -0400
 header:
     teaser: /assets/images/posts/Restaurant.jpg
     og_image: /assets/images/posts/Restaurant.jpg
-categories: [Python]
+categories:
+  - Python
 tags:
   - Asynchronous Programming
   - Asyncio

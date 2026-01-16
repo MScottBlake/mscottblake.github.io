@@ -1,7 +1,9 @@
 ---
 title: "Oktane 2025: Conference Insights"
 date: 2025-09-29 01:26:00 -0400
-categories: ["Device Management", "Identity Management"]
+categories:
+  - Device Management
+  - Identity Management
 tags:
   - Chrome Enterprise Core
   - Conference

@@ -1,8 +1,12 @@
 ---
 title: "Writing Inclusive Software: Precision, Respect, and Automation"
 date: 2025-07-27T22:45:00-04:00
-categories: [Automation]
-tags: [inclusive-language, github-actions, pre-commit, best-practices]
+categories:
+  - Automation
+tags:
+  - Inclusive Language
+  - Github Actions
+  - Pre-commit
 description: "How inclusive language leads to better software and how to enforce it using GitHub Actions and Pre-Commit."
 redirect_from:
   - /blog/inclusivity/automation/inclusive-language-in-software/

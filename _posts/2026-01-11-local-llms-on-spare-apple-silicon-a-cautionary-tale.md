@@ -2,7 +2,6 @@
 title: "Local LLMs on Spare Apple Silicon: A Cautionary Tale"
 date: 2026-01-11 20:53:00 -0500
 categories:
-  - Productivity
   - AI
 tags:
   - LLM

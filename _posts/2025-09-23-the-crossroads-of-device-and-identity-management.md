@@ -1,8 +1,15 @@
 ---
 title: "The Crossroads of Device and Identity Management"
 date: 2025-09-23 23:57:00 -0400
-categories: ["Identity Management", "Device Management", "Oktane"]
-tags: ["Platform SSO", "FastPass", "macOS", "Identity", "Okta"]
+categories:
+  - Device Management
+  - Identity Management
+tags:
+  - Platform SSO
+  - FastPass
+  - macOS
+  - Identity
+  - Okta
 ---
 
 As MacAdmins, we’ve always had to keep one eye on security and compliance. When our organizations needed to roll out security baselines or enforce compliance policies, it usually fell to us to translate those requirements into device-level controls. FileVault, Gatekeeper, password complexity... the list goes on.

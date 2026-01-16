@@ -1,7 +1,8 @@
 ---
 title: Improve your AutoPkg repo-add Commands
 date: 2025-07-21T20:30:25-04:00
-categories: [AutoPkg]
+categories:
+  - AutoPkg
 redirect_from:
   - /blog/autopkg/improve-your-autopkg-repo-add-commands/
 ---
