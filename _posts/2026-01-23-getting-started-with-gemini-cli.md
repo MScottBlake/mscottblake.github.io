@@ -26,7 +26,6 @@ I first looked at Anthropic's [Claude Code](https://docs.anthropic.com/en/docs/a
 I decided to give Gemini CLI a shot. To get up and running, I followed a [YouTube tutorial by Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h-AKdBSCRpqjD3y6T7Xgrb). I found this series to be excellent. The videos were not too long, they were descriptive, and they went through a lof of content. I was able to familiarize myself with the setup and basic capabilities from these videos alone.
 {% include youtubePlayer.html id=page.youtubeId %}
 
-
 After playing around with it for a few days with minimal configurations, I have to say it works surprisingly well.
 
 I've never used Claude Code, so I can't offer a direct comparison. However, if you are looking to experiment with tools like this, Gemini CLI is a strong contender and probably good enough.
