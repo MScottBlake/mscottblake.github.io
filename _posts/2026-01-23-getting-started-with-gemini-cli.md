@@ -53,7 +53,7 @@ I'm approaching this primarily as a hobbyist, but I feel that proficiency with t
 
 ## Not Just "Vibe Coding"
 
-There is a term floating around called "vibe coding," which implies you can just vibe with the AI and it will magically build your app. While catchy, I think this is misleading.
+There is a term floating around called _vibe coding_, which implies you can just vibe with the AI and it will magically build your app. While catchy, I think this is misleading.
 
 These tools cannot do the work entirely by themselves. To get truly useful output, they need a human who would be able to do it themselves if they were given enough time.
 
