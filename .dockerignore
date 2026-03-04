@@ -1,0 +1,10 @@
+.git
+.gitignore
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+vendor
+node_modules
+docker-compose.yml
+README.md

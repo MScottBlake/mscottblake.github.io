@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    platform: linux/amd64
+    command: jekyll serve --watch --force_polling --livereload --host 0.0.0.0
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/srv/jekyll
+    environment:
+      - JEKYLL_ENV=development
