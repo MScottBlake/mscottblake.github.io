@@ -12,23 +12,28 @@ redirect_from:
   - /blog/inclusivity/automation/inclusive-language-in-software/
 ---
 
-Inclusive language isn't just a social nicety—it's a powerful tool for building better software. Whether you're writing comments, documentation, variables, or interface strings, the words you choose shape how your software is perceived, understood, and maintained. In this post, we’ll explore why inclusive language matters, how it can lead to clearer, more precise communication, and how to enforce it automatically using GitHub Actions or Pre-Commit hooks.
+Inclusive language isn't just a social nicety—it's a powerful tool for building better software. Whether you're writing
+comments, documentation, variables, or interface strings, the words you choose shape how your software is perceived,
+understood, and maintained. In this post, we'll explore why inclusive language matters, how it can lead to clearer, more
+precise communication, and how to enforce it automatically using GitHub Actions or Pre-Commit hooks.
 
 ---
 
 ## Why Inclusive Language Matters in Software
 
-**1. It’s respectful.**
-Software is used and contributed to by people from all walks of life. Inclusive language helps ensure that no group is marginalized, even inadvertently, through outdated or harmful terminology.
+**1. It's respectful.** Software is used and contributed to by people from all walks of life. Inclusive language helps
+ensure that no group is marginalized, even inadvertently, through outdated or harmful terminology.
 
-**2. It improves clarity.**
-Terms like “master/slave” or “whitelist/blacklist” are vague and carry historical baggage. Replacing them with “primary/replica” or “allowlist/blocklist” not only avoids harm but also improves technical precision.
+**2. It improves clarity.** Terms like "master/slave" or "whitelist/blacklist" are vague and carry historical baggage.
+Replacing them with "primary/replica" or "allowlist/blocklist" not only avoids harm but also improves technical
+precision.
 
-**3. It enhances localization.**
-Inclusive and unambiguous language is easier to translate. Terms with cultural or idiomatic meanings often create problems for non-native speakers or machine translation systems. Choosing clear, descriptive words helps your software scale across borders.
+**3. It enhances localization.** Inclusive and unambiguous language is easier to translate. Terms with cultural or
+idiomatic meanings often create problems for non-native speakers or machine translation systems. Choosing clear,
+descriptive words helps your software scale across borders.
 
-**4. It reflects your values.**
-Codebases—especially open-source projects—are a reflection of the communities behind them. Adopting inclusive language communicates that your team values equity, professionalism, and collaboration.
+**4. It reflects your values.** Codebases—especially open-source projects—are a reflection of the communities behind
+them. Adopting inclusive language communicates that your team values equity, professionalism, and collaboration.
 
 ---
 
@@ -46,11 +51,13 @@ Codebases—especially open-source projects—are a reflection of the communitie
 
 ## Enforcing Inclusive Language Automatically
 
-To make inclusive language a consistent part of your development process, you can integrate automated checks into your CI pipeline and local development tools.
+To make inclusive language a consistent part of your development process, you can integrate automated checks into your
+CI pipeline and local development tools.
 
 ### GitHub Actions
 
-The [get-woke/woke](https://github.com/get-woke/woke) action is a simple way to add inclusive language checks to your GitHub workflows.
+The [get-woke/woke](https://github.com/get-woke/woke) action is a simple way to add inclusive language checks to your
+GitHub workflows.
 
 ```yaml
 name: Inclusive Language Check
@@ -71,7 +78,8 @@ jobs:
           fail-on-error: true
 ```
 
-This will scan your codebase for non-inclusive terms on every pull request or commit, depending on how you configure your workflow.
+This will scan your codebase for non-inclusive terms on every pull request or commit, depending on how you configure
+your workflow.
 
 **Example output:**
 
@@ -113,7 +121,8 @@ rules:
 
 ### Pre-Commit Hook
 
-You can also catch non-inclusive terms before they’re even committed, using [pre-commit](https://pre-commit.com) and [woke](https://docs.getwoke.tech).
+You can also catch non-inclusive terms before they're even committed, using [pre-commit](https://pre-commit.com) and
+[woke](https://docs.getwoke.tech).
 
 **1. Install woke:**
 
@@ -149,7 +158,9 @@ Now, each time you try to commit code, `woke` will run and alert you to any term
 
 ## Building a Better Software Culture
 
-Inclusive language is a small but significant step toward building more respectful, accessible, and globally-friendly software. It's about fostering empathy, improving communication, and helping contributors and users feel welcome. And thanks to modern tools like `woke`, it’s also easy to automate.
+Inclusive language is a small but significant step toward building more respectful, accessible, and globally-friendly
+software. It's about fostering empathy, improving communication, and helping contributors and users feel welcome. And
+thanks to modern tools like `woke`, it's also easy to automate.
 
 ---
 

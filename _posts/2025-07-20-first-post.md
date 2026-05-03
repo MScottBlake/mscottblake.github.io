@@ -5,9 +5,11 @@ redirect_from:
   - /blog/first-post/
 ---
 
-Hello and welcome to MacAdmin Musings, a blog dedicated to the thoughts, tools, and techniques of a MacAdmin navigating today’s IT landscape.
+Hello and welcome to MacAdmin Musings, a blog dedicated to the thoughts, tools, and techniques of a MacAdmin navigating
+today's IT landscape.
 
-Whether you're deep into MDM workflows, building serverless infrastructure, or automating device provisioning with code, you're in the right place.
+Whether you're deep into MDM workflows, building serverless infrastructure, or automating device provisioning with code,
+you're in the right place.
 
 If you are:
 

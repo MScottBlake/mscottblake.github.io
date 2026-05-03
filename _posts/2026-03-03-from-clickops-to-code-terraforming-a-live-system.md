@@ -18,22 +18,24 @@ excerpt: "A practical guide to importing and maintaining an existing live system
 
 ---
 
-There are hundreds if not thousands of Terraform examples and walk throughs on the internet today. Most of them start in a clean environment. They assume a brand new account. No history. No surprises.
+There are hundreds if not thousands of Terraform examples and walk throughs on the internet today. Most of them start in
+a clean environment. They assume a brand new account. No history. No surprises.
 
-But that’s rarely the situation most of us inherit.
+But that's rarely the situation most of us inherit.
 
-More often, we’re working on something that’s been evolving for years:
+More often, we're working on something that's been evolving for years:
 
 - Resources created manually in a GUI
 - Naming conventions that shifted over time
 - Temporary fixes that became permanent
 - Configurations that "just work," but nobody is entirely sure why
 
-Applying Infrastructure as Code (IaC) using Terraform in an existing, already-provisioned environment is often called _Brownfield Terraform_.
+Applying Infrastructure as Code (IaC) using Terraform in an existing, already-provisioned environment is often called
+*Brownfield Terraform*.
 
-You’re not building from scratch.
+You're not building from scratch.
 
-You’re (very carefully) translating the current reality into code.
+You're (very carefully) translating the current reality into code.
 
 ## What Does Success Actually Look Like?
 
@@ -57,7 +59,7 @@ And Terraform responds with:
 No changes. Your infrastructure matches the configuration.
 ```
 
-That’s the first milestone.
+That's the first milestone.
 
 At that moment:
 
@@ -73,7 +75,8 @@ Before importing anything, answer one question:
 
 Where will Terraform state live long-term?
 
-If this system matters, you probably don’t want local state files. A remote backend with locking enabled sets the tone early.
+If this system matters, you probably don't want local state files. A remote backend with locking enabled sets the tone
+early.
 
 Example:
 
@@ -96,11 +99,12 @@ Then:
 terraform init
 ```
 
-It’s a small step, but it changes the way the project feels. It becomes intentional.
+It's a small step, but it changes the way the project feels. It becomes intentional.
 
 ## Step 1: Configure the Provider
 
-For this post, I’ll use Okta as an example provider because it’s a system I’m familiar with, but the concepts apply to many others.
+For this post, I'll use Okta as an example provider because it's a system I'm familiar with, but the concepts apply to
+many others.
 
 A minimal provider setup might look like:
 
@@ -124,32 +128,35 @@ export TF_VAR_okta_api_token="****"
 terraform init
 ```
 
-At this point, Terraform can talk to the API, but it doesn’t know anything about what already exists.
+At this point, Terraform can talk to the API, but it doesn't know anything about what already exists.
 
 ## Step 2: Discover What Exists (This Is the Real Work)
 
 Before Terraform can manage something, it needs to know it exists.
 
-In a greenfield project, that’s trivial because you’re defining everything.
+In a greenfield project, that's trivial because you're defining everything.
 
 In a brownfield system, discovery is often the most time-consuming step.
 
-Some Terraform providers support advanced "list" or [query](https://developer.hashicorp.com/terraform/language/v1.14.x/import/bulk#define-a-query)-style features that can generate configuration automatically.
+Some Terraform providers support advanced "list" or
+[query](https://developer.hashicorp.com/terraform/language/v1.14.x/import/bulk#define-a-query)-style features that can
+generate configuration automatically.
 
 Okta does not. At least not yet.
 
-So how do you move from "resources exist somewhere" to usable Terraform [import blocks](https://developer.hashicorp.com/terraform/language/import/single-resource#define-an-import-block)?
+So how do you move from "resources exist somewhere" to usable Terraform
+[import blocks](https://developer.hashicorp.com/terraform/language/import/single-resource#define-an-import-block)?
 
 You have two practical approaches:
 
 1. Manual discovery (reasonable for small systems)
 2. Scripted discovery (necessary for large systems)
 
-Let’s walk through both.
+Let's walk through both.
 
 ### Option 1: Manual Discovery (Small Environments)
 
-If you’re working with:
+If you're working with:
 
 - A handful of resources
 - A limited number of types
@@ -166,7 +173,8 @@ curl -s \
   "https://example.okta.com/api/v1/groups"
 ```
 
-This returns JSON listing each group. The output will include something similar to this, but likely with more data included:
+This returns JSON listing each group. The output will include something similar to this, but likely with more data
+included:
 
 ```json
 [
@@ -201,7 +209,7 @@ import {
 
 For very small environments, this is perfectly reasonable.
 
-But it doesn’t scale.
+But it doesn't scale.
 
 ### The Scaling Problem
 
@@ -228,11 +236,12 @@ The pattern is consistent across systems:
 3. Output deterministic Terraform import blocks
 4. Repeat by resource type
 
-> You don’t need to over-engineer this.
-> The goal of this script is repeatability. If you can re-run it next week and get the same import blocks, you’re on the right track.
+> You don't need to over-engineer this.
+> The goal of this script is repeatability. If you can re-run it next week and get the same import blocks, you're on the
+> right track.
 {: .notice--info }
 
-Here’s an example script that:
+Here's an example script that:
 
 - Queries the API
 - Handles pagination
@@ -440,7 +449,7 @@ Now you have import blocks for each ID returned and the script is reproducible a
 
 ### Why Naming Strategy Matters
 
-Notice we didn’t use raw IDs as Terraform resource names.
+Notice we didn't use raw IDs as Terraform resource names.
 
 This works:
 
@@ -489,7 +498,7 @@ resource "okta_group" "engineering" {
 
 The generated file will likely be very verbose.
 
-That’s expected.
+That's expected.
 
 Accuracy matters more than aesthetics at this stage.
 
@@ -497,7 +506,8 @@ Accuracy matters more than aesthetics at this stage.
 
 The biggest mistake is trying to import everything at once.
 
-Importing 1,000 resources at once creates a massive, unreadable diff. Instead, work by resource type. It reduces cognitive load and keeps the blast radius of errors small.
+Importing 1,000 resources at once creates a massive, unreadable diff. Instead, work by resource type. It reduces
+cognitive load and keeps the blast radius of errors small.
 
 In Okta, a logical batching order might look like:
 
@@ -512,7 +522,8 @@ Each batch builds confidence.
 
 ## Refactor Only After Parity
 
-Wait until you reach a clean `plan` for a resource type before you start cleaning up the code. Once the state matches production exactly, that's when you can:
+Wait until you reach a clean `plan` for a resource type before you start cleaning up the code. Once the state matches
+production exactly, that's when you can:
 
 - Standardize resource names.
 - Extract common patterns into modules.
@@ -527,7 +538,8 @@ Wait until you reach a clean `plan` for a resource type before you start cleanin
 5. **Verify** no changes again.
 6. **Commit** again.
 
-By separating the "import" phase from the "aesthetic" phase, you ensure that every stylistic change is verified against the live environment.
+By separating the "import" phase from the "aesthetic" phase, you ensure that every stylistic change is verified against
+the live environment.
 
 ## What Changes After Parity?
 
@@ -549,48 +561,60 @@ And now you have options:
 
 Before Terraform, those changes were silent.
 
-Now they’re observable.
+Now they're observable.
 
 That shift alone is often worth the effort.
 
 ## A Few Things I've Learned Along the Way
 
-The process of moving from ClickOps to Code isn't just a technical migration; it's an educational one. Here are a few things that have become clear to me during this process:
+The process of moving from ClickOps to Code isn't just a technical migration; it's an educational one. Here are a few
+things that have become clear to me during this process:
 
 ### Generated configuration is noisier than expected
 
-When you let Terraform generate your configuration, it doesn't just capture the settings you care about. It captures *everything*. You'll find default values, deprecated attributes, and internal metadata that you never see in the UI. Sifting through this noise to find the "intent" of a resource is the most time-consuming part of the refactoring phase.
+When you let Terraform generate your configuration, it doesn't just capture the settings you care about. It captures
+*everything*. You'll find default values, deprecated attributes, and internal metadata that you never see in the UI.
+Sifting through this noise to find the "intent" of a resource is the most time-consuming part of the refactoring phase.
 
 ### API pagination matters sooner than you think
 
-If you're writing scripts to generate import blocks, don't assume a single API call will return everything. In a production Okta environment, "all groups" or "all users" almost always requires handling pagination. Check the API documentation to see if it applies to you on every object you're trying to import. Failing to do this is silent and you may not even realize you're missing part of your environment.
+If you're writing scripts to generate import blocks, don't assume a single API call will return everything. In a
+production Okta environment, "all groups" or "all users" almost always requires handling pagination. Check the API
+documentation to see if it applies to you on every object you're trying to import. Failing to do this is silent and you
+may not even realize you're missing part of your environment.
 
 ### API rate limits can be quite harsh
 
-Terraform is fast. APIs are often slower. When you run a `plan` or `apply` against hundreds of resources, you will likely hit rate limits. Some systems are stricter than others. Plan accordingly. Implementing exponential backoff in your generation scripts and understanding your provider's concurrency settings is essential for a smooth workflow.
+Terraform is fast. APIs are often slower. When you run a `plan` or `apply` against hundreds of resources, you will
+likely hit rate limits. Some systems are stricter than others. Plan accordingly. Implementing exponential backoff in
+your generation scripts and understanding your provider's concurrency settings is essential for a smooth workflow.
 
 ### Naming conventions become very visible
 
-In the UI, a group named "Engineering-Prod-Access" and "engineering_prod_access" might be similar enough visually. In code, those inconsistencies are glaring. This process forces a conversation about naming standards that probably should have happened years ago.
+In the UI, a group named "Engineering-Prod-Access" and "engineering_prod_access" might be similar enough visually. In
+code, those inconsistencies are glaring. This process forces a conversation about naming standards that probably should
+have happened years ago.
 
 ### "Temporary" resources are everywhere
 
-Every environment has them: the "test-policy-do-not-delete" from 2022 or the "temp-access-for-contractor" that expired months ago. Terraforming a live system acts as a high-resolution audit. You will find things you forgot existed, and you'll finally have the visibility needed to delete them.
+Every environment has them: the "test-policy-do-not-delete" from 2022 or the "temp-access-for-contractor" that expired
+months ago. Terraforming a live system acts as a high-resolution audit. You will find things you forgot existed, and
+you'll finally have the visibility needed to delete them.
 
 ## Closing Thought
 
-Terraforming a live system isn’t about control. It’s about clarity.
+Terraforming a live system isn't about control. It's about clarity.
 
-You’re not rewriting history. You’re documenting what exists and choosing how it evolves.
+You're not rewriting history. You're documenting what exists and choosing how it evolves.
 
 Once the system lives in code, the conversation changes.
 
-It’s no longer:
+It's no longer:
 
 > "Who changed this?"
 
 It becomes:
 
-> "Let’s look at the plan."
+> "Let's look at the plan."
 
-That’s the real benefit of going from ClickOps to Code.
+That's the real benefit of going from ClickOps to Code.

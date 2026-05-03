@@ -27,7 +27,9 @@ Up Next: [Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-
 
 ## Getting Started
 
-I find that it is easiest to learn new tools and concepts when I have a project. For this post, we're going to use Neil Martin's [axm Terraform Provider](https://registry.terraform.io/providers/neilmartin83/axm/latest/docs) as an example. This provider will allow us to interact with the Apple School/Business Manager API.
+I find that it is easiest to learn new tools and concepts when I have a project. For this post, we're going to use Neil
+Martin's [axm Terraform Provider](https://registry.terraform.io/providers/neilmartin83/axm/latest/docs) as an example.
+This provider will allow us to interact with the Apple School/Business Manager API.
 
 Before we can do that, we're going to need some credentials.
 
@@ -36,7 +38,8 @@ Before we can do that, we're going to need some credentials.
 1. Find the + icon and select *Create API Account*.
 1. Provide a label such as "Terraform" that will describe the purpose of this account and click *Create*.
 1. Click *Generate Private Key* and a `.pem` file will be downloaded by your browser.
-1. Find the account you just created and click *Manage*. Note the *KeyID* and *ClientID*. You will need these values later.
+1. Find the account you just created and click *Manage*. Note the *KeyID* and *ClientID*. You will need these values
+   later.
 
 ## Install Terraform
 
@@ -66,13 +69,16 @@ Lastly, verify that the installation is working correctly.
 terraform -version
 ```
 
-For more detailed installation instructions, check out Hashicorp's [installation documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
+For more detailed installation instructions, check out Hashicorp's
+[installation documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
 
 ## Terraform Project
 
-A Terraform project is any directory containing `.tf` files that has been initialized with the `terraform init` command, which sets up Terraform caches and a local state file.
+A Terraform project is any directory containing `.tf` files that has been initialized with the `terraform init` command,
+which sets up Terraform caches and a local state file.
 
-With that knowledge, let's create a directory called *terraform*. We'll use this as our working directory moving forward.
+With that knowledge, let's create a directory called *terraform*. We'll use this as our working directory moving
+forward.
 
 ```sh
 mkdir terraform
@@ -100,23 +106,31 @@ terraform {
 }
 ```
 
-Let's talk about what this means. We have a `terraform {}` block that defines the terraform CLI version requirements (`required_version`) as well as the provider requirements (`required_providers`) for this project.
+Let's talk about what this means. We have a `terraform {}` block that defines the terraform CLI version requirements
+(`required_version`) as well as the provider requirements (`required_providers`) for this project.
 
-You'll notice that there is a weird operator (`~>`). This operator is equivalent to `>= 1.2.0, < 2.0.0`. It can be `1.3` or `1.10.2` but not `2.0`. See the Terraform documentation for more information about [version constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints).
+You'll notice that there is a weird operator (`~>`). This operator is equivalent to `>= 1.2.0, < 2.0.0`. It can be `1.3`
+or `1.10.2` but not `2.0`. See the Terraform documentation for more information about
+[version constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints).
 
 ## Provider Configuration
 
-Terraform doesn't care how the configurations are organized as long as they are `.tf` files and all in the same directory. The entire configuration could be in a single file, but that gets pretty difficult to read as the project gets bigger.
+Terraform doesn't care how the configurations are organized as long as they are `.tf` files and all in the same
+directory. The entire configuration could be in a single file, but that gets pretty difficult to read as the project
+gets bigger.
 
-I like to separate out the `terraform` and `provider` blocks into their own files, so let's create a new `providers.tf` file.
+I like to separate out the `terraform` and `provider` blocks into their own files, so let's create a new `providers.tf`
+file.
 
 ```sh
 touch providers.tf
 ```
 
-The contents of that file will depend on the provider you are using. In Each provider configuration will be different. Basically, this is where you define authentication for the system you are trying to integrate.
+The contents of that file will depend on the provider you are using. In Each provider configuration will be different.
+Basically, this is where you define authentication for the system you are trying to integrate.
 
-In our example, we are using the axm provider, so the contents of `providers.tf` will depend on your credentials from Apple School Manager or Apple Business Manager.
+In our example, we are using the axm provider, so the contents of `providers.tf` will depend on your credentials from
+Apple School Manager or Apple Business Manager.
 
 ```hcl
 provider "axm" {
@@ -129,13 +143,16 @@ provider "axm" {
 
 > ⚠️ It is recommended that you do not enter secret values here. We will fix this in the next post when we talk about variables.
 
-Alternatively, you can set environment variables for `AXM_CLIENT_ID`, `AXM_KEY_ID`, `AXM_PRIVATE_KEY`, and `AXM_SCOPE`. Any value that is set in those environment variables can be omitted from the `provider` block. You can even define it with no values if everything is being set by environment variable.
+Alternatively, you can set environment variables for `AXM_CLIENT_ID`, `AXM_KEY_ID`, `AXM_PRIVATE_KEY`, and `AXM_SCOPE`.
+Any value that is set in those environment variables can be omitted from the `provider` block. You can even define it
+with no values if everything is being set by environment variable.
 
 ```hcl
 provider "axm" {}
 ```
 
-The `scope` value will depend on which portal you are using. Enter `school.api` for Apple School Manager and `business.api` for Apple Business Manager.
+The `scope` value will depend on which portal you are using. Enter `school.api` for Apple School Manager and
+`business.api` for Apple Business Manager.
 
 At this point, your project directory should contain:
 
@@ -153,13 +170,14 @@ Now that we have `terraform {}` and `provider {}` blocks, it's time to initializ
 terraform init
 ```
 
-After running `terraform init`, you’ll see a new `.terraform` directory. This stores plugin binaries and local state information. You shouldn't need to modify anything within this directory.
+After running `terraform init`, you'll see a new `.terraform` directory. This stores plugin binaries and local state
+information. You shouldn't need to modify anything within this directory.
 
 ## Next Post
 
 At this point, you have Terraform installed, configured, and ready to talk to Apple School or Business Manager.
 
-In the next post, we’ll introduce variables: the key to making your configurations reusable, modular, and secure.
+In the next post, we'll introduce variables: the key to making your configurations reusable, modular, and secure.
 
 Up Next: [Variables and Secrets]({% post_url 2025-10-20-terraform-101-variables-and-secrets %})
 

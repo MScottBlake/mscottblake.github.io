@@ -129,17 +129,21 @@ directory. Rules that are specific to a single codebase live in the root of the 
 
 Your global file might say:
 
+```markdown
 - prefer small, composable functions
 - always add type hints
 - avoid unnecessary abstraction
 - prefer guard clauses over nested logic to keep the code flat and readable
+```
 
 Your repo file might say:
 
+```markdown
 - use this logging library
 - follow this error handling pattern
 - structure modules this way
 - validate changes with pre-commit: `pre-commit run --all-files`
+```
 
 The agent merges both.
 
@@ -289,13 +293,13 @@ The less the agent has to explore, the more predictable its behavior becomes.
 
 Constraints, skills, and structure aren't just about better results, they're about stopping that exploration early.
 
-## The New Metric: Articulation over Lines of Code
+## The New Metric: Articulation
 
 Lines of Code was never a great metric, but now it's actively misleading.
 
 The bottleneck isn't typing speed anymore, it's ambiguity, and ambiguity compounds across every step the agent takes.
 
-If your request can be interpreted multiple ways, the agent will pick one and you will own the result.
+If your request can be interpreted multiple ways, the agent *will* pick one and *you* will own the result.
 
 That shifts the value of a developer:
 
@@ -323,11 +327,11 @@ In other words, the better you define the problem, the less the agent has to gue
 
 Start small.
 
-Create a `GEMINI.md` or `CLAUDE.md` file in your project. Add a few rules about how you structure code or handle errors.
+Create a `CLAUDE.md` or `GEMINI.md` file in your project. Add a few rules about how you structure code or handle errors.
 
 Then take one repetitive task and turn it into a skill.
 
-You'll notice the shift immediately. The output becomes more consistent. Less guesswork, more execution.
+You'll notice the shift immediately. The output becomes more consistent. You'll see less guesswork and more execution.
 
 That's the real change happening right now.
 
