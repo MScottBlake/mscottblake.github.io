@@ -1,0 +1,4 @@
+[MD013]
+line-length = 120       # Set your desired max line length
+reflow = true           # Enable automatic text reflow
+reflow-mode = "default" # Options: "default", "normalize", "sentence-per-line", "semantic-line-breaks"
