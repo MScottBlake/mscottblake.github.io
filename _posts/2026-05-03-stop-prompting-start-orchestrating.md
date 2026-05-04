@@ -13,7 +13,7 @@ tags:
   - LLM Harness
   - Skills-based Workflows
   - Deterministic Agents
-excerpt: "Agentic coding isn’t louder prompts—it’s tighter reins.
+excerpt: "Agentic coding succeeds through tighter reins rather than louder prompts.
 Learn how a 20-line config file turns Claude or Gemini from chatty co-pilot into a deterministic, test-running, skill-bound teammate."
 
 ---
@@ -27,7 +27,7 @@ software development, the shift isn't happening in the models. The shift is in h
 
 We have entered the age of the harness, and therefore the age of controlled execution.
 
-A harness isn't just a tool, it's an execution environment.
+A harness provides a full execution environment, extending far beyond the utility of a simple tool.
 
 It gives a model:
 
@@ -243,7 +243,7 @@ This combines the reasoning of an LLM with the reliability of a script you alrea
 
 I'm using traditional tools like `grep` and `find` less than I used to, but I haven't stopped using them.
 
-The real shift isn't the tools. It's who's using them.
+We are seeing a shift in who operates the tools, even as the tools stay the same.
 
 In a harness-driven workflow, the agent is often the one running searches. It will scan your codebase, open files, and
 try to build context before taking action.
@@ -297,7 +297,8 @@ Constraints, skills, and structure aren't just about better results, they're abo
 
 Lines of Code was never a great metric, but now it's actively misleading.
 
-The bottleneck isn't typing speed anymore, it's ambiguity, and ambiguity compounds across every step the agent takes.
+Ambiguity has replaced typing speed as the primary bottleneck, and ambiguity compounds across every step the agent
+takes.
 
 If your request can be interpreted multiple ways, the agent *will* pick one and *you* will own the result.
 
