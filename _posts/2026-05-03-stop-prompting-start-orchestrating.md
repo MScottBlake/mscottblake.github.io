@@ -256,7 +256,7 @@ Every search, every file read, every chunk of context costs tokens.
 
 In large codebases, the default failure mode isn't bad code generation, it's unbounded exploration.
 
-The agent keeps searching, opening files, and trying to infer intent. Yoe end up paying more for the agent to figure out
+The agent keeps searching, opening files, and trying to infer intent. You end up paying more for the agent to figure out
 what to do and less for actual execution.
 
 This is where the distinction starts to matter:
