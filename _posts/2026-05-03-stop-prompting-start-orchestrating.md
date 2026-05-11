@@ -215,7 +215,7 @@ When asked to review code:
 ```
 
 Every time you invoke that skill, the process is consistent, and more consistent, less variable output leads to more
-deterministic outcmes.
+deterministic outcomes.
 
 Different tools will implement this differently, but the concept is the same.
 
@@ -256,7 +256,7 @@ Every search, every file read, every chunk of context costs tokens.
 
 In large codebases, the default failure mode isn't bad code generation, it's unbounded exploration.
 
-The agent keeps searching, opening files, and trying to infer intent. Yoe end up paying more for the agent to figure out
+The agent keeps searching, opening files, and trying to infer intent. You end up paying more for the agent to figure out
 what to do and less for actual execution.
 
 This is where the distinction starts to matter:
@@ -356,3 +356,5 @@ Are you still prompting, or are you orchestrating?
 - [The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)
 - [Gemini Agent Skills](https://geminicli.com/docs/cli/skills/)
 - [Codex Agent Skills](https://developers.openai.com/codex/skills)
+
+*Edited 2026-05-11: Corrected spelling errors.*
