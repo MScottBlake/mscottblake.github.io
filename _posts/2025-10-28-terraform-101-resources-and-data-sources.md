@@ -17,7 +17,7 @@ tags:
   - Jamf Pro
   - Kandji
   - Iru
-  - Fleet
+  - Fleet Device Management
 header:
   teaser: /assets/images/posts/HashiCorpTerraform.png
   og_image: /assets/images/posts/HashiCorpTerraform.png

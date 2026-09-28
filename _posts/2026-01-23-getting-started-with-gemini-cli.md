@@ -8,7 +8,7 @@ tags:
   - Gemini CLI
   - Claude Code
   - Coding Assistant
-  - Agentic Workflows
+  - Agentic Coding
   - MCP
   - Model Context Protocol
   - Cloud AutoPkg Runner
